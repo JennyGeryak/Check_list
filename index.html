@@ -11,7 +11,7 @@
 	 function getIdIndex (){
 	 	return id_index=id_index+1;
 	 }
-	function add_task (){
+	function add_task (text){
 		var task_list=document.getElementById("task_list");
 		var id="item"+getIdIndex ()
 		console.dir(task_list)
@@ -24,9 +24,9 @@
 		label_item.htmlFor =id;
 	    label_item.type = 'checkbox';
 	    task_list.appendChild(label_item);
-	    label_item.appendChild(document.createTextNode('task_1'));
+	    label_item.appendChild(document.createTextNode(text));
 	}
-	add_task ();
+	add_task ('task 1');
 
 	</script>
 </body>
