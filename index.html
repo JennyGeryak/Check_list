@@ -13,13 +13,15 @@
 	 }
 	function add_task (){
 		var task_list=document.getElementById("task_list");
+		var id="item"+getIdIndex ()
 		console.dir(task_list)
 		var task_item = document.createElement('input');
 	    task_item.type = 'checkbox';
-	    task_item.id="item"+getIdIndex ();
+	    task_item.id=id;
 	    task_list.appendChild(task_item);
 	    console.dir(task_item) 
-		var lable_item = document.createElement('label');
+		var label_item = document.createElement('label');
+		label_item.htmlFor =id;
 	    label_item.type = 'checkbox';
 	    task_list.appendChild(label_item);
 	    label_item.appendChild(document.createTextNode('task_1'));
