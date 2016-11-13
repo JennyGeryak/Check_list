@@ -6,11 +6,14 @@
 </head>
 <body>
 	<script>
-		function calculate (x){
-			return (x*2) + (x*3)
-		}
-		calculate (1)
-		console.log (calculate (1))
+		function calculate (step){
+			for (var i=0; i!=6; i++){
+				console.log(i)
+				i=i+step;
+			}
+
+		};
+	calculate (2);
 	</script>
 </body>
 </html>
