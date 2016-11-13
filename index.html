@@ -5,17 +5,27 @@
 	<title>Check list</title>
 </head>
 <body>
+<div id="task_list"></div>
 	<script>
-		function calculate (step){
-			if (step==2){
-				console.log ('two');
-			} else if (step==3){
-				console.log ('three')
-			} else {
-				console.log (step)
-			}
-		};
-				calculate (4);
+	 var id_index=0;
+	 function getIdIndex (){
+	 	return id_index=id_index+1;
+	 }
+	function add_task (){
+		var task_list=document.getElementById("task_list");
+		console.dir(task_list)
+		var task_item = document.createElement('input');
+	    task_item.type = 'checkbox';
+	    task_item.id="item"+getIdIndex ();
+	    task_list.appendChild(task_item);
+	    console.dir(task_item) 
+		var lable_item = document.createElement('lable');
+	    lable_item.type = 'checkbox';
+	    task_list.appendChild(lable_item);
+	    lable_item.appendChild(document.createTextNode('task_1'));
+	}
+	add_task ();
+
 	</script>
 </body>
 </html>
