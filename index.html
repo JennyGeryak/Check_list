@@ -7,13 +7,15 @@
 <body>
 	<script>
 		function calculate (step){
-			for (var i=0; i!=6; i++){
-				console.log(i)
-				i=i+step;
+			if (step==2){
+				console.log ('two');
+			} else if (step==3){
+				console.log ('three')
+			} else {
+				console.log (step)
 			}
-
 		};
-	calculate (2);
+				calculate (4);
 	</script>
 </body>
 </html>
