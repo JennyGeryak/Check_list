@@ -8,6 +8,7 @@ var id_index=0;
 		var task_item = document.createElement('input');
 	    task_item.type = 'checkbox';
 	    task_item.id=id;
+	    task_item.checked=true;
 	    task_item.style.display = 'none';
 	    task_list.appendChild(task_item);
 		var label_item = document.createElement('label');
