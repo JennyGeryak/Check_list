@@ -6,6 +6,7 @@ var id_index=0;
 	function addTask (text) {
 		var task_list=document.getElementById("task_list");
 		var id="item"+getIdIndex ();
+		// creating var named task_item and assign element with tipe input, created in document 
 		var task_item = document.createElement('input');
 	    task_item.type = 'checkbox';
 	    task_item.id=id;
@@ -29,7 +30,16 @@ var id_index=0;
 	    }
 	}	
 	function addField () {
+		var task_list=document.getElementById("task_list");
+		var button=document.createElement("button");
+		task_list.appendChild(button);
+		var input_field = document.createElement('input');
+		task_list.appendChild(input_field);
+		input_field.type = 'text';
+			console.log (input_field);
 
 	}
 	addTask ('task 1');
 	addTask ('task 2');
+	addField ('');
+	
