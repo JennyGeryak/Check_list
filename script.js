@@ -29,4 +29,4 @@ var id_index=0;
 	    }
 	}
 	add_task ('task 1');
-	add_task ('task 1');
+	add_task ('task 2');
