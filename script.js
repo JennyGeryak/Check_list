@@ -31,13 +31,21 @@ var id_index=0;
 	}	
 	function addField () {
 		var task_list=document.getElementById("task_list");
+		var tool_bar=document.createElement("div");
+		document.body.appendChild(tool_bar);
 		var button=document.createElement("button");
-		task_list.appendChild(button);
+		tool_bar.appendChild(button);
+		button.appendChild(document.createTextNode('+'));
 		var input_field = document.createElement('input');
-		task_list.appendChild(input_field);
+		tool_bar.appendChild(input_field);
 		input_field.type = 'text';
 			console.log (input_field);
+		input_field.id='task_field';
+		button.onclick = function () {
+			var text = input_field.value;
+			addTask(text);
 
+	   	}
 	}
 	addTask ('task 1');
 	addTask ('task 2');
