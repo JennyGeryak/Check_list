@@ -46,7 +46,20 @@ var id_index=0;
 
 	   	}
 	}
+	function clearList () {
+		var task_list = document.getElementById("task_list");
+		var tool_bar=document.createElement("div");
+		document.body.appendChild(tool_bar);
+		var button=document.createElement("button");
+		tool_bar.appendChild(button);
+		button.appendChild(document.createTextNode('Clear all'));
+		button.onclick = function () {
+			task_list.innerHTML=""
+			console.dir(task_list);
+		}
+	}
 	addTask ('task 1');
 	addTask ('task 2');
 	addField ('');
+	clearList ('')
 	
