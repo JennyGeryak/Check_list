@@ -39,7 +39,6 @@ var id_index=0;
 		var input_field = document.createElement('input');
 		tool_bar.appendChild(input_field);
 		input_field.type = 'text';
-			console.log (input_field);
 		input_field.id='task_field';
 		button.onclick = function () {
 			var text = input_field.value;
