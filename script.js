@@ -26,7 +26,8 @@ var id_index=0;
 		button.onclick = function () {
 			task_list.removeChild(label_item);
 			task_list.removeChild(task_item);
-			clearButton(this,task_list);
+			task_list.removeChild(this);
+			//clearButton(this,task_list);
 
 		}
 	    label_item.onclick = function () {
@@ -67,8 +68,8 @@ var id_index=0;
 			console.dir(task_list);
 		}
 	}
-	function clearButton (object,parent) {
-		parent.removeChild(object);
+	//function clearButton (object,parent) {
+		//parent.removeChild(object);
 
 	}
 	addTask ('task 1');
