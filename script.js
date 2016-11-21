@@ -20,6 +20,12 @@ var id_index=0;
 	    task_list.appendChild(label_item);
 	    // creating child element in object label_item 
 	    label_item.appendChild(document.createTextNode(text));
+	    var button=document.createElement("button");
+	    task_list.appendChild(button);
+		button.appendChild(document.createTextNode('x'));
+		button.onclick = function () {
+			task_list.replaceChild(task_item, label_item, button)
+		}
 	    label_item.onclick = function () {
 	    	console.log (task_item.checked);
 	    	if(task_item.checked) {
