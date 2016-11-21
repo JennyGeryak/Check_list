@@ -24,7 +24,10 @@ var id_index=0;
 	    task_list.appendChild(button);
 		button.appendChild(document.createTextNode('x'));
 		button.onclick = function () {
-			task_list.replaceChild(task_item, label_item, button)
+			task_list.removeChild(label_item);
+			task_list.removeChild(task_item);
+			clearButton(this,task_list);
+
 		}
 	    label_item.onclick = function () {
 	    	console.log (task_item.checked);
@@ -63,6 +66,10 @@ var id_index=0;
 			task_list.innerHTML=""
 			console.dir(task_list);
 		}
+	}
+	function clearButton (object,parent) {
+		parent.removeChild(object);
+
 	}
 	addTask ('task 1');
 	addTask ('task 2');
