@@ -1,9 +1,15 @@
 body{
-	margin-top: 30px;
-    margin-right: 40px;
-    margin-bottom: 30px;
-    margin-left: 40px;
+	width: 300px; 
+	padding: 50px; 
+	margin: auto;
 }
-label {
-	width: 960px
+label{
+	width: 960px;
+	display: block;
+}
+div #task_list button{
+
+}
+div button{
+	
 }
