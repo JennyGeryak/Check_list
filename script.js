@@ -69,9 +69,7 @@ var id_index=0;
 		}
 	}
 	//function clearButton (object,parent) {
-		//parent.removeChild(object);
-
-	}
+		//parent.removeChild(object);}
 	addTask ('task 1');
 	addTask ('task 2');
 	addField ('');
