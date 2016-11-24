@@ -52,7 +52,7 @@ var id_index=0;
 		input_field.id='task_field';
 		button.onclick = function () {
 			var text = input_field.value;
-			-(text);
+			addTask(text);
 
 	   	}
 	}
