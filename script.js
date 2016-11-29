@@ -7,6 +7,16 @@ var id_index=0;
 		var task_list=document.getElementById("task_list");
 		var id="item"+getIdIndex ();
 		// creating var named task_item and assign element with tipe input, created in document 
+	    var button=document.createElement("button");
+	    task_list.appendChild(button);
+		button.appendChild(document.createTextNode('x'));
+		button.onclick = function () {
+			task_list.removeChild(label_item);
+			task_list.removeChild(task_item);
+			task_list.removeChild(this);
+			//clearButton(this,task_list);
+
+		}
 		var task_item = document.createElement('input');
 	    task_item.type = 'checkbox';
 	    task_item.id=id;
@@ -20,16 +30,6 @@ var id_index=0;
 	    task_list.appendChild(label_item);
 	    // creating child element in object label_item 
 	    label_item.appendChild(document.createTextNode(text));
-	    var button=document.createElement("button");
-	    task_list.appendChild(button);
-		button.appendChild(document.createTextNode('x'));
-		button.onclick = function () {
-			task_list.removeChild(label_item);
-			task_list.removeChild(task_item);
-			task_list.removeChild(this);
-			//clearButton(this,task_list);
-
-		}
 	    label_item.onclick = function () {
 	    	console.log (task_item.checked);
 	    	if(task_item.checked) {
