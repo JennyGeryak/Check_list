@@ -64,3 +64,8 @@ div:nth-child(2) button{
 	float: left;
 	box-shadow: 0 0 3px rgba(81, 203, 238, 1);
 }
+#task_field{
+	background-color: #f5f5f5;
+	border: #f5f5f5 0px solid;
+	width: 400px;
+}
