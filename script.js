@@ -50,9 +50,12 @@ var id_index=0;
 		tool_bar.appendChild(input_field);
 		input_field.type = 'text';
 		input_field.id='task_field';
+		input_field.placeholder='Add new task';
+		console.dir(task_field);
 		button.onclick = function () {
 			var text = input_field.value;
 			addTask(text);
+
 
 	   	}
 	}
