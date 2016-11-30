@@ -40,12 +40,14 @@ var id_index=0;
 	    }
 	}	
 	function addField () {
-		var task_list=document.getElementById("task_list");
+		var task_list=document.getElementsByClassName("list")[0];
 		var tool_bar=document.createElement("div");
-		document.body.appendChild(tool_bar);
+		tool_bar.className='text_field'
+		task_list.appendChild(tool_bar);
 		var button=document.createElement("button");
 		tool_bar.appendChild(button);
 		button.appendChild(document.createTextNode('+'));
+		button.className='plus';
 		var input_field = document.createElement('input');
 		tool_bar.appendChild(input_field);
 		input_field.type = 'text';
