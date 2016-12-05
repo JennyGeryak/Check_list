@@ -57,6 +57,7 @@ var id_index=0;
 		button.onclick = function () {
 			var text = input_field.value;
 			addTask(text);
+			input_field.value='';
 
 
 	   	}
