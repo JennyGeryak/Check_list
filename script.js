@@ -58,8 +58,14 @@ var id_index=0;
 			var text = input_field.value;
 			addTask(text);
 			input_field.value='';
-
-
+	   	}
+	   	input_field.onkeypress = function (e) {
+	   		console.log (e);
+	   		if(e.code=="Enter"){
+	   		var text = input_field.value;
+			addTask(text);
+			input_field.value='';
+	   		}
 	   	}
 	}
 	function clearList () {
