@@ -90,4 +90,24 @@ input[placeholder='Add new task']{
 	font-family: courier;
 	font-size: 18px;
 }
-
+.list:after {
+	content: "";
+	width: 480px;
+	height: 3px;
+	display: block;
+	border: 2px solid #dedede;
+	margin-left: 10px;
+	margin-top: 5px;
+	border-top: 0px;
+}
+.list:before {
+	content: "";
+	width: 490px;
+	height: 3px;
+	display: block;
+	border: 2px solid #dedede;
+	margin-left: 5px;
+	border-top: 0px;
+	position: absolute;
+	bottom: 5px;
+}
