@@ -53,19 +53,32 @@ var id_index=0;
 		input_field.type = 'text';
 		input_field.id='task_field';
 		input_field.placeholder='Add new task';
+		button.disabled=true;
 		console.dir(task_field);
 		button.onclick = function () {
-			var text = input_field.value;
-			addTask(text);
-			input_field.value='';
+			if (input_field.value!=''){
+				var text = input_field.value;
+				addTask(text);
+				input_field.value='';
+			}
+			button.disabled=true;
 	   	}
 	   	input_field.onkeypress = function (e) {
 	   		console.log (e);
-	   		if(e.code=="Enter"){
-	   		var text = input_field.value;
-			addTask(text);
-			input_field.value='';
+	   		if (input_field.value!='') {
+	   			button.disabled=false;
 	   		}
+	   		if(e.code=="Enter"){
+				if (input_field.value!=''){
+					var text = input_field.value;
+					addTask(text);
+					input_field.value='';
+
+				}
+				button.disabled=true;
+	   		}
+
+
 	   	}
 	}
 	function clearList () {
