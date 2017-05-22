@@ -7,4 +7,4 @@
 
 [Demo](http://s.codepen.io/JennyGeryak/debug/yVoMpv)
 
-Preview: ![Alt Text] (https://github.com/JennyGeryak/Check_list/blob/master/screen.png)
+Preview: ![Alt Text](https://github.com/JennyGeryak/Check_list/blob/master/screen.png)
